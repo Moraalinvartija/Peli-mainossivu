@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Electric;
+    src: url(assets/Electronic_Highway_Sign.TTF);
+    
+}
+* {
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+#sivu{
+margin-top: 2rem;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+padding: 2rem;
+}
+.responsive {
+  width: 90%;
+  height: auto;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+h1 {
+  padding-top: 1rem;
+  font-family: Electric;
+  color: #fdf603;
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  text-shadow: 5px 5px 8px #000000;
+  padding-bottom: 1rem;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  #piilo, #toka, #kolmas { /*hide elements before clicking coin, show after with javascript */
+    display: none;
+  }
+  #piilo {
+  opacity: 0;
+  transition: opacity 1s;
+  display: none;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 2;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+   
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      z-index: -0;
+    }
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes scale {  /* text frame css */
+  100% {
+    transform: scale(1);
+  }
+}
+
+.normal {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.slow { /* downnload link css fade in slower than others for cinematic vibes */
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  animation: fade-in 1s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@media screen and (max-width: 1200px) {
+  #sivu{
+    width: 60%;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  #sivu{
+    width: 100%;
+  }
+}
